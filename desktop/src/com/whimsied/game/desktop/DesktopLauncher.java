@@ -6,7 +6,10 @@ import com.whimsied.game.MyFirstGdxGame;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new MyFirstGdxGame(), config);
+		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
+		cfg.title = "camera";
+		cfg.width = 500;
+		cfg.height = 500;
+		new LwjglApplication(new MyFirstGdxGame(), cfg);
 	}
 }
